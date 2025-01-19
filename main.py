@@ -45,7 +45,9 @@ def main():
 
             for b in bullets:
                 if a.check_collision(b):
-                    a.kill()
+                    b.kill()
+                    a.split()
+                    break
 
 
             
