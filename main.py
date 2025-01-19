@@ -34,14 +34,8 @@ def main():
             u.update(dt)
 
 
-#        for a in asteroids:
-            #if a.check_collision(player):
-                #print("Game over!")
-                #sys.exit()
-
-
-        for asteroid in asteroids:
-            if asteroid.collides_with(player):
+        for a in asteroids:
+           if a.check_collision(player):
                 print("Game over!")
                 sys.exit()
 
